@@ -7,11 +7,13 @@ using System.Threading.Tasks;
 
 namespace RPG.Entités.Heros
 {
-    public class Archer : Classes
+    public class Archer : Hero
     {
-        public Archer(string nom) : base(nom)
+        public Archer(string nom) : base(nom) { }
+
+        public override void GenererStats()
         {
-            HpMax = 100;
+            PvMax = 100;
             DegatsMin = 15;
             DegatsMax = 20;
         }

@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace RPG.Entités.Heros
 {
-    public class Sorcier : Classes
+    public class Sorcier : Hero
     {
-        public Sorcier(string nom) : base(nom)
+        public Sorcier(string nom) : base(nom) { }
+        public override void GenererStats()
         {
-            HpMax = 80;
+            PvMax = 80;
             DegatsMin = 15;
             DegatsMax = 25;
         }

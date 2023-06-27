@@ -6,11 +6,13 @@ using System.Threading.Tasks;
 
 namespace RPG.Entités.Heros
 {
-    public class Barbare : Classes
+    public class Barbare : Hero
     {
-        public Barbare(string nom) : base(nom)
+        public Barbare(string nom) : base(nom) { }
+
+        public override void GenererStats()
         {
-            HpMax = 150;
+            PvMax = 150;
             DegatsMin = 10;
             DegatsMax = 15;
         }

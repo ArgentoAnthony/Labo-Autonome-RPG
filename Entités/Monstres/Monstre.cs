@@ -6,15 +6,10 @@ using System.Threading.Tasks;
 
 namespace RPG.Entités.Monstres
 {
-    public class Dragonnet : Entite
+    public abstract class Monstre : Entite
     {
-        public Dragonnet() : base("Dragonnet")
+        public Monstre(string nom) : base(nom)
         {
-
-            HpMax = 50;
-            Hp = HpMax;
-            DegatsMin = 10;
-            DegatsMax = 15;
         }
     }
 }

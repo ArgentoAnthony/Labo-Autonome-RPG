@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RPG.Interface;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,15 +7,15 @@ using System.Threading.Tasks;
 
 namespace RPG.Entités.Monstres
 {
-    public class Orc : Entite
+    public class Orc : Monstre, IOr
     {
-        public Orc() : base("Orc")
+        public int Or { get; } = GestionDés.Lancer(TypeDés.D6);
+        public Orc() : base("Orc") { }
+        public override void GenererStats()
         {
-
-            HpMax = 50;
-            Hp = HpMax;
-            DegatsMin = 10;
-            DegatsMax = 15;
+            PvMax = 80;
+            DegatsMin = 15;
+            DegatsMax = 20;
         }
     }
 }
