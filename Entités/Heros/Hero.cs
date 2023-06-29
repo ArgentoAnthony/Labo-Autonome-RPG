@@ -37,10 +37,10 @@ namespace RPG.Entités.Heros
                 Console.ForegroundColor = ConsoleColor.Yellow;
                 Console.WriteLine($"Félicitations pour avez atteint le niveau {Niveau}");
 
-                PvMax += (PvMax/5);
+                PvMax += (PvMax/10);
                 Heal();
-                DegatsMin += (DegatsMin/10);
-                DegatsMax += (DegatsMax/10);
+                DegatsMin += 2/*(DegatsMin/10)*/;
+                DegatsMax += 2/*(DegatsMax/10)*/;
 
                 Caracteristiques();
             }

@@ -1,4 +1,5 @@
 ﻿using RPG.Entités.Heros;
+using RPG.Entités.Images;
 using RPG.Entités.Monstres;
 
 Menu();
@@ -109,6 +110,7 @@ static void Jouer(Hero monPerso)
             Console.WriteLine();
             Console.WriteLine("c'est perdu...");
             Console.WriteLine($"Vous avez battu {100-monstres.Count} monstres");
+            DeadImg.AfficheImg();
             break;
             Console.WriteLine();
         }

@@ -39,7 +39,6 @@ namespace RPG.Entités
             }
 
         }
-        //Attaquer
         protected void PerdrePointsDeVie(int Pv)
         {
             this.Pv -= Pv;
